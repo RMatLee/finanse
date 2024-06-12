@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Loader2 } from "lucide-react";
 import { SignIn, ClerkLoaded, ClerkLoading } from "@clerk/nextjs";
 
@@ -22,9 +21,7 @@ export default function Page() {
           </div>
         </div>
       </div>
-      <div className="h-full bg-blue-600 hidden lg:flex items-center justify-center">
-        <Image src="/logo.svg" height={100} width={100} alt="Logo"></Image>
-      </div>
+      <div className="h-full bg-blue-600 hidden lg:flex items-center justify-center"></div>
     </div>
   );
 }
