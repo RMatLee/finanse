@@ -6,10 +6,11 @@ export const runtime = 'edge';
 
 const app = new Hono().basePath('/api')
 
-const routes = app.route("/accounts", accounts)
+app.route("/accounts", accounts)
 
+const routes = app.route("/accounts")
 
 export const GET = handle(app)
 export const POST = handle(app)
 
-export type AppType = typeof routes;
+export type AppType = typeof app;
