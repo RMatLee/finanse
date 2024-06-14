@@ -15,6 +15,13 @@
       "when": 1718385056028,
       "tag": "0001_calm_paibok",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1718395007052,
+      "tag": "0002_magenta_namora",
+      "breakpoints": true
     }
   ]
 }
