@@ -12,7 +12,7 @@ export type ResponseType = InferResponseType<
   200
 >["data"][0];
 
-export const columns: ColumnDef<ResponseType>[] = [
+export const columns: ColumnDef<Payment>[] = [
   {
     id: "select",
     header: ({ table }) => (

@@ -16,7 +16,9 @@ const AccountsPage = () => {
   const accountsQuery = useGetAccounts();
   const accounts = accountsQuery.data || [];
 
-  const isDisabled = accountsQuery.isLoading || deleteAccounts.isPending;
+  const isDisabled = 
+  accountsQuery.isLoading ||
+  
 
   if (accountsQuery.isLoading) {
     return (
@@ -50,12 +52,8 @@ const AccountsPage = () => {
             filterKey="email"
             columns={columns}
             data={accounts}
-            onDelete={(row) => {
-              const ids = row.map((r) => r.original.id);
-
-              deleteAccounts.mutate({ ids });
-            }}
-            disabled={isDisabled}
+            onDelete={() => {}}
+            disabled={false}
           />
         </CardContent>
       </Card>

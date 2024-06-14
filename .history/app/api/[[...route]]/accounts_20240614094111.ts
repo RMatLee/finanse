@@ -73,7 +73,7 @@ const app = new Hono()
                 id: accounts.id,
             });
 
-            return c.json({ data });
+            return c.json({ data })
     } 
     );
 

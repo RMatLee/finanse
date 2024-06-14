@@ -69,11 +69,6 @@ const app = new Hono()
                     inArray(accounts.id, values.ids)
                 )
             )
-            .returning({
-                id: accounts.id,
-            });
-
-            return c.json({ data });
     } 
     );
 

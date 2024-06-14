@@ -12,7 +12,7 @@ export type ResponseType = InferResponseType<
   200
 >["data"][0];
 
-export const columns: ColumnDef<ResponseType>[] = [
+export const columns: ColumnDef<Payment>[] = [
   {
     id: "select",
     header: ({ table }) => (
@@ -36,17 +36,25 @@ export const columns: ColumnDef<ResponseType>[] = [
     enableHiding: false,
   },
   {
-    accessorKey: "name",
+    accessorKey: "status",
+    header: "Status",
+  },
+  {
+    accessorKey: "email",
     header: ({ column }) => {
       return (
         <Button
           variant="ghost"
           onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
         >
-          Name
+          Email
           <ArrowUpDown className="ml-2 h-4 w-4" />
         </Button>
       );
     },
+  },
+  {
+    accessorKey: "amount",
+    header: "Amount",
   },
 ];
