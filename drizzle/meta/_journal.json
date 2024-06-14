@@ -8,6 +8,13 @@
       "when": 1718224572964,
       "tag": "0000_colorful_leper_queen",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1718385056028,
+      "tag": "0001_calm_paibok",
+      "breakpoints": true
     }
   ]
 }
