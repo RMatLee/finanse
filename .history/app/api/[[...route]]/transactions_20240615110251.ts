@@ -151,8 +151,8 @@ const app = new Hono()
                 )
                 .returning();
 
-            return c.json({ data });
-        },
+            return c.json({ data })
+        }
     )
     .post(
         "/bulk-delete",

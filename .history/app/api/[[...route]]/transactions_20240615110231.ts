@@ -149,10 +149,7 @@ const app = new Hono()
                         ...value,
                     }))
                 )
-                .returning();
-
-            return c.json({ data });
-        },
+        }
     )
     .post(
         "/bulk-delete",

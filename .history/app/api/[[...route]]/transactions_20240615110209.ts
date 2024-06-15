@@ -144,15 +144,9 @@ const app = new Hono()
             const data = await db
                 .insert(transactions)
                 .values(
-                    values.map((value) => ({
-                        id: createId(),
-                        ...value,
-                    }))
+                    values.map((value) => {})
                 )
-                .returning();
-
-            return c.json({ data });
-        },
+        }
     )
     .post(
         "/bulk-delete",
