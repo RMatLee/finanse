@@ -33,7 +33,7 @@ const TransactionsPage = () => {
     setVariant(VARIANTS.IMPORT);
   };
 
-  const onCancelImport = () => {
+  const onCancelImports = () => {
     setImportResults(INITIAL_IMPORT_RESULTS);
     setVariant(VARIANTS.LIST);
   };
@@ -66,11 +66,7 @@ const TransactionsPage = () => {
   if (variant === VARIANTS.IMPORT) {
     return (
       <>
-        <ImportCard
-          data={importResults.data}
-          onCancel={onCancelImport}
-          onSubmit={() => {}}
-        />
+        <ImportCard />
       </>
     );
   }
