@@ -1,6 +1,7 @@
 # Finanse
 
 Track your income and expenses with Finanse.
+![Logo]([https://example.com/images/logo.png](https://github.com/RMatLee/finanse/blob/main/.github/images/dashboard-image.png))
 
 ## ‼️ Folder Structure
 
