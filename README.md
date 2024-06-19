@@ -6,7 +6,8 @@ Track your income and expenses with Finanse.
 
 Here is the folder structure of this app.
 
-finance-dashboard/
+```plaintext
+finanse/
   |- app/
     |-- (auth)/
     |-- (dashboard)/
@@ -60,3 +61,5 @@ finance-dashboard/
   |- postcss.config.js
   |- tailwind.config.ts
   |- tsconfig.json
+</details>
+```
